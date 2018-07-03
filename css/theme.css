@@ -3258,6 +3258,20 @@ section {
     overflow: hidden;
 }
 
+.au-card-perso {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    padding-right: 10px;
+    margin: 13px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+}
+
 .au-card--border {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -14638,4 +14652,9 @@ section {
 
 .vue-lists ul, .vue-lists ol {
     padding-left: 30px;
+}
+
+.moteurInput {
+    margin-top:3px;
+    margin-bottom:3px; 
 }
