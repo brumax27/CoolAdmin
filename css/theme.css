@@ -14658,3 +14658,18 @@ section {
     margin-top:3px;
     margin-bottom:3px; 
 }
+
+.breadcrumb {
+    margin-top: 12.5px;
+}
+
+#title-Bat{
+    margin-bottom: 10px;
+}
+
+#false i{
+    color: red;
+}
+#true i{
+    color: greenyellow;
+}

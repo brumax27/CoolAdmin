@@ -42,7 +42,7 @@
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="index.html">
+                        <a class="logo" href="home.html">
                             <img src="images/icon/logo.png" alt="CoolAdmin" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
@@ -59,24 +59,6 @@
                         <li class="active has-sub">
                             <a class="js-arrow" href="home.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow open" href="#">
-                                <i class="fas fa-home"></i>Batiments</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list" style="display: none;">
-                                <li>
-                                    <a href="#"><i class="fas fa-plus"></i>Ajout d'un batiment</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-mail-forward"></i>Batiment 1</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-mail-forward"></i>Batiment 2</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-mail-forward"></i>Batiment 3</a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
@@ -105,55 +87,37 @@
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                 <div id="moteur" class="navbar-sidebar au-card-perso" style="background-color: #e5e5e5;">
-                    <form class="form-horizontal">
-                        <div class="col text">
-                            <h4><u>Moteur : </u></h4>
-                        </div>
-                        <div class="col moteurInput">
-                            <input placeholder="Batiment" class="form-control" type="text">
-                        </div>
-                        <div class="col moteurInput">
-                            <input placeholder="Salle" class="form-control" type="text">
-                        </div>
-                        <div class="col moteurInput">
-                            <label class="form-control-label">Début:</label>
-                            <input class="form-control" type="date">
-                        </div>
-                        <div class="col moteurInput">
-                            <label class="form-control-label">Fin:</label>
-                            <input class="form-control" type="date">
-                        </div>
-                        <div class="col">
-                            <button type="submit" class="btn btn-primary btn-sm">
-                                <i class="fa fa-dot-circle-o"></i> Rechercher
-                            </button>
-                        </div>
-                        
-                    </form>
+                        <form class="form-horizontal">
+                                <div class="col text">
+                                    <h4><u>Moteur : </u></h4>
+                                </div>
+                                <div class="col moteurInput">
+                                    <input placeholder="Batiment" class="form-control" type="text">
+                                </div>
+                                <div class="col moteurInput">
+                                    <input placeholder="Salle" class="form-control" type="text">
+                                </div>
+                                <div class="col moteurInput">
+                                        <input type="text"
+                                        data-range="true"
+                                        data-multiple-dates-separator=" - "
+                                        data-language="fr"
+                                        data-timepicker="true"
+                                        class="form-control datepicker-here"/>
+                                </div>
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary btn-sm">
+                                        <i class="fa fa-dot-circle-o"></i> Rechercher
+                                    </button>
+                                </div>
+                                
+                            </form>
                 </div>
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
                             <a class="js-arrow" href="home.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow open" href="#">
-                                <i class="fas fa-home"></i>Batiments</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list" style="display: none;">
-                                <li>
-                                    <a href="#"><i class="fas fa-plus"></i>Ajout d'un batiment</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-mail-forward"></i>Batiment 1</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-mail-forward"></i>Batiment 2</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-mail-forward"></i>Batiment 3</a>
-                                </li>
-                            </ul>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
@@ -180,6 +144,12 @@
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
                         <div class="header-wrap">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="home.html">Audit thermal</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dashbord</li>
+                                </ol>
+                            </nav>
                             <div class="header-button col-md-2 ml-auto">
                                 <div class="noti-wrap"></div>
                                 <div class="account-wrap">
@@ -208,7 +178,15 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                    <a href="#"><button class="au-btn au-btn-icon au-btn--blue">
+                                        <i class="zmdi zmdi-plus"></i>Ajouter un batiment</button></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row m-t-25">
                             <!-- Vignette Batiment -->
                             <div class="col-sm-6 col-lg-3">
@@ -229,7 +207,120 @@
                                 </a>
                             </div>
                             <!-- END Vignette Batiment -->
-                            
+                            <!-- Vignette Batiment -->
+                            <div class="col-sm-6 col-lg-3">
+                                <a class="" href="batiment.html">
+                                    <div class="overview-item overview-item--c2">
+                                        <div class="overview__inner">
+                                            <div class="overview-box clearfix">
+                                                <div class="img-fluid rounded mx-auto d-block">
+                                                    <img src="images/icon/Bat2.png" alt="John Doe" />
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Batiment n° ...</h2>
+                                                    <span>Sonde IP : ...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Vignette Batiment -->
+                            <!-- Vignette Batiment -->
+                            <div class="col-sm-6 col-lg-3">
+                                <a class="" href="batiment.html">
+                                    <div class="overview-item overview-item--c3">
+                                        <div class="overview__inner">
+                                            <div class="overview-box clearfix">
+                                                <div class="img-fluid rounded mx-auto d-block">
+                                                    <img src="images/icon/Bat3.png" alt="John Doe" />
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Batiment n° ...</h2>
+                                                    <span>Sonde IP : ...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Vignette Batiment -->
+                            <!-- Vignette Batiment -->
+                            <div class="col-sm-6 col-lg-3">
+                                <a class="" href="batiment.html">
+                                    <div class="overview-item overview-item--c4">
+                                        <div class="overview__inner">
+                                            <div class="overview-box clearfix">
+                                                <div class="img-fluid rounded mx-auto d-block">
+                                                    <img src="images/icon/Bat4.png" alt="John Doe" />
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Batiment n° ...</h2>
+                                                    <span>Sonde IP : ...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Vignette Batiment -->
+                            <!-- Vignette Batiment -->
+                            <div class="col-sm-6 col-lg-3">
+                                <a class="" href="batiment.html">
+                                    <div class="overview-item overview-item--c3">
+                                        <div class="overview__inner">
+                                            <div class="overview-box clearfix">
+                                                <div class="img-fluid rounded mx-auto d-block">
+                                                    <img src="images/icon/Bat5.png" alt="John Doe" />
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Batiment n° ...</h2>
+                                                    <span>Sonde IP : ...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Vignette Batiment -->
+                            <!-- Vignette Batiment -->
+                            <div class="col-sm-6 col-lg-3">
+                                <a class="" href="batiment.html">
+                                    <div class="overview-item overview-item--c2">
+                                        <div class="overview__inner">
+                                            <div class="overview-box clearfix">
+                                                <div class="img-fluid rounded mx-auto d-block">
+                                                    <img src="images/icon/Bat6.png" alt="John Doe" />
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Batiment n° ...</h2>
+                                                    <span>Sonde IP : ...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Vignette Batiment -->
+                            <!-- Vignette Batiment -->
+                            <div class="col-sm-6 col-lg-3">
+                                <a class="" href="batiment.html">
+                                    <div class="overview-item overview-item--c1">
+                                        <div class="overview__inner">
+                                            <div class="overview-box clearfix">
+                                                <div class="img-fluid rounded mx-auto d-block">
+                                                    <img src="images/icon/Bat7.png" alt="John Doe" />
+                                                </div>
+                                                <div class="text">
+                                                    <h2>Batiment n° ...</h2>
+                                                    <span>Sonde IP : ...</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- END Vignette Batiment -->
                         </div>
                     </div>
                 </div>
