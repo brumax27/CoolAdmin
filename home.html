@@ -182,8 +182,8 @@
                             <div class="col-md-12">
                                 <div class="overview-wrap">
                                     <h2 class="title-1">overview</h2>
-                                    <a href="#"><button class="au-btn au-btn-icon au-btn--blue">
-                                        <i class="zmdi zmdi-plus"></i>Ajouter un batiment</button></a>
+                                    <button class="au-btn au-btn-icon au-btn--blue" data-toggle="modal" data-target="#ajoutModal" >
+                                        <i class="zmdi zmdi-plus"></i>Ajouter un batiment</button>
                                 </div>
                             </div>
                         </div>
@@ -340,8 +340,41 @@
             </div>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
+
+            <div class="modal fade" id="ajoutModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" data-backdrop="static" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticModalLabel">Ajouter un batiùent</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" method="post" class="">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input id="name" name="name" placeholder="Nom du batiment" class="form-control" type="text">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input id="image" name="imageBat" class="form-control" type="file" accept="*.jpg, *.jpeg, *.png, *.bnp">
+                                    </div>
+                                </div>
+                                <div class="form-actions form-group">
+                                    <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        
     </div>
 
     <!-- Jquery JS-->
