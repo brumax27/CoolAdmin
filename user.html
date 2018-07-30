@@ -30,7 +30,7 @@
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
     <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
     <link href="vendor/datepicker/css/datepicker.min.css" rel="stylesheet" type="text/css">
-    
+
     <!-- Main CSS-->
     <link href="css/theme.css" rel="stylesheet" media="all">
 
@@ -61,7 +61,7 @@
                             <a class="js-arrow" href="home.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="consigne.html">
                                 <i class="fas fa-bar-chart-o"></i>Consigne</a>
                         </li>
@@ -69,8 +69,8 @@
                             <a class="js-arrow" href="mail.html">
                                 <i class="zmdi zmdi-email"></i>Gestion Mail</a>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="user.hml">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="user.html">
                                 <i class="fas fa-user"></i>Utilisateurs</a>
                         </li>
                     </ul>
@@ -88,31 +88,31 @@
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
                     <div id="moteur" class="navbar-sidebar au-card-perso" style="background-color: #e5e5e5;">
-                            <form class="form-horizontal">
-                                    <div class="col text">
-                                        <h4><u>Moteur : </u></h4>
-                                    </div>
-                                    <div class="col moteurInput">
-                                        <input placeholder="Batiment" class="form-control" type="text">
-                                    </div>
-                                    <div class="col moteurInput">
-                                        <input placeholder="Salle" class="form-control" type="text">
-                                    </div>
-                                    <div class="col moteurInput">
-                                            <input type="text"
-                                            data-range="true"
-                                            data-multiple-dates-separator=" - "
-                                            data-language="fr"
-                                            data-timepicker="true"
-                                            class="form-control datepicker-here"/>
-                                    </div>
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-primary btn-sm">
-                                            <i class="fa fa-dot-circle-o"></i> Rechercher
-                                        </button>
-                                    </div>
-                                    
-                                </form>
+                        <form class="form-horizontal">
+                            <div class="col text">
+                                <h4><u>Moteur : </u></h4>
+                            </div>
+                            <div class="col moteurInput">
+                                <input placeholder="Batiment" class="form-control" type="text">
+                            </div>
+                            <div class="col moteurInput">
+                                <input placeholder="Salle" class="form-control" type="text">
+                            </div>
+                            <div class="col moteurInput">
+                                    <input type="text"
+                                    data-range="true"
+                                    data-multiple-dates-separator=" - "
+                                    data-language="fr"
+                                    data-timepicker="true"
+                                    class="form-control datepicker-here"/>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    <i class="fa fa-dot-circle-o"></i> Rechercher
+                                </button>
+                            </div>
+                            
+                        </form>
                     </div>
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
@@ -120,7 +120,7 @@
                             <a class="js-arrow" href="home.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="consigne.html">
                                 <i class="fas fa-bar-chart-o"></i>Consigne</a>
                         </li>
@@ -128,7 +128,7 @@
                             <a class="js-arrow" href="mail.html">
                                 <i class="zmdi zmdi-email"></i>Gestion Mail</a>
                         </li>
-                        <li class="has-sub">
+                        <li class="active has-sub">
                             <a class="js-arrow" href="user.html">
                                 <i class="fas fa-user"></i>Utilisateurs</a>
                         </li>
@@ -143,12 +143,12 @@
             <!-- HEADER DESKTOP-->
             <header class="header-desktop">
                 <div class="section__content section__content--p30">
-                    <div class="container-fluid">
+                    <div class="container-fluid">                        
                         <div class="header-wrap">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="home.html">Audit thermal</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Consignes</li>
+                                    <li class="breadcrumb-item" aria-current="page">Utilisateurs</a></li>
                                 </ol>
                             </nav>
                             <div class="header-button col-md-2 ml-auto">
@@ -159,7 +159,7 @@
                                             <img src="images/icon/avatar-01.jpg" alt="John Doe" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="account.html">john doe</a>
+                                            <a class="js-acc-btn" href="">john doe</a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="account-dropdown__footer">
@@ -180,64 +180,60 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="overview-wrap">
-                                        <h2 class="title-1">overview</h2>
-                                        <button class="au-btn au-btn-icon au-btn--blue" data-toggle="modal" data-target="#ajoutModal" >
-                                            <i class="zmdi zmdi-plus"></i>Ajouter une salle</button>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue" data-toggle="modal" data-target="#ajoutModal" >
+                                        <i class="zmdi zmdi-plus"></i>Ajouter un utilisateur</button>
                                 </div>
                             </div>
-                            <div class="row m-t-25">
-                                <div class="col-lg-12">
-                                    <div class="table-responsive table--no-card m-b-30">
-                                        <table class="table table-borderless table-striped table-earning">
-                                            <thead>
-                                                <tr>
-                                                    <th>Nom</th>
-                                                    <th>Température</th>
-                                                    <th>Elements</th>
-                                                    <th>Début</th>
-                                                    <th>Fin</th>
-                                                    <th>Active</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Internat</td>
-                                                    <td>19</td>
-                                                    <td>
-                                                        <ul>
-                                                            <li>gk,nsfdlghf</li>
-                                                        </ul>
-                                                    </td>
-                                                    <td>11/10/2017 6h30</td>
-                                                    <td>11/05/2018 19h38</td>
-                                                    <td id="true">
-                                                        <i class="fas fa-square"></i>
-                                                    </td>
-                                                    <td> 
-                                                        <div class="table-data-feature">
-                                                            <button class="item" data-toggle="modal" data-placement="top" title="" data-original-title="Edit" data-target="#ajoutModal">
-                                                                <i class="zmdi zmdi-edit"></i>
-                                                            </button>
-                                                            <button class="item" data-toggle="modal" data-placement="top" title="" data-original-title="Delete" data-target="#delModal">
-                                                                <i class="zmdi zmdi-delete"></i>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-12">
+                                <div class="table-responsive table--no-card m-b-30">
+                                    <table class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>Nom</th>
+                                                <th>Prénom</th>
+                                                <th>rang</th>
+                                                <th>rôle</th>
+                                                <th>mail</th>
+                                                <th>Prévenue</th>
+                                                <th>Last Connection</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Doe</td>
+                                                <td>John</td>
+                                                <td>Proviseur</td>
+                                                <td>Consultant</td>
+                                                <td>John.doe@contact.com</td>
+                                                <td id="true">
+                                                    <i class="fas fa-square"></i>
+                                                </td>
+                                                <td> 
+                                                    le 16/07/2018 à 19h25
+                                                </td>
+                                                <td>
+                                                    <div class="table-data-feature">
+                                                        <button class="item" data-toggle="modal" data-placement="top" title="" data-original-title="Edit" data-target="#ajoutModal">
+                                                            <i class="zmdi zmdi-edit"></i>
+                                                        </button>
+                                                        <button class="item" data-toggle="modal" data-placement="top" title="" data-original-title="Delete" data-target="#delModal">
+                                                            <i class="zmdi zmdi-delete"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 </div>
                             </div>
-                            <!-- DATE PICKER-->
-                            <!--<div id="datePicker" class="col-lg-2 datepicker-here" data-language='fr' data-range="true"
-                            data-multiple-dates-separator=" - " data-timepicker="true"></div>-->
-                            <!-- END DATE PICKER-->
                         </div>
                     </div>
                 </div>
@@ -255,6 +251,7 @@
             </div>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
+
             <div class="modal fade" id="ajoutModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" data-backdrop="static" style="display: none;" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -264,28 +261,44 @@
                                 <span aria-hidden="true">×</span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <form action="" method="post" class="">
+                        <form action="" method="post">
+                            <div class="modal-body">
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input id="name" name="name" placeholder="Nom de la consigne" class="form-control" type="text">
+                                        <input id="lastname" name="lastname" placeholder="Nom" class="form-control" type="text">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input id="temperature" name="temperature" placeholder="Temeprature de consigne" class="form-control" type="number">
+                                        <input id="name" name="name" placeholder="Prénom" class="form-control" type="text">
                                     </div>
                                 </div>
-                                <div id="date" name="date" class="form-control datepicker-here" data-language='fr' data-range="true"
-                                    data-multiple-dates-separator=" - " data-timepicker="true" ></div>
-                                <div class="form-actions form-group">
-                                    <button type="submit" class="btn btn-success btn-sm">Submit</button>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input id="rank" name="rank" placeholder="Rang" class="form-control" type="text">
+                                    </div>
                                 </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <select name="select" name="role" id="select" class="form-control">
+                                            <option value="">Rôle</option>
+                                            <option value="1">Option #1</option>
+                                            <option value="2">Option #2</option>
+                                            <option value="3">Option #3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input id="mail" name="mail" placeholder="Addresse Mail" class="form-control" type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <input type="button" class="btn btn-primary" value="Confirm"/>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -301,7 +314,7 @@
                         </div>
                         <div class="modal-body">
                             <p>
-                                Voulez-vous vraiment supprimer cette Consigne?
+                                Voulez-vous vraiment supprimer cette utilisateur?
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -336,7 +349,7 @@
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/js/datepicker.min.js"></script>
     <script src="vendor/datepicker/js/i18n/datepicker.fr.js"></script>
-<!--   DatePicker http://t1m0n.name/air-datepicker/docs/   -->
+    <!--   DatePicker http://t1m0n.name/air-datepicker/docs/   -->
 
     <!-- Main JS-->
     <script src="js/main.js"></script>

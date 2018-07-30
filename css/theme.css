@@ -14673,3 +14673,10 @@ section {
 #true i{
     color: greenyellow;
 }
+
+.optionBat{
+    display: inline-block;
+    float: right;
+    border-radius: 10px;
+    margin-top: 5px;
+}
