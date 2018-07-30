@@ -62,15 +62,15 @@
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="consigne.html">
                                 <i class="fas fa-bar-chart-o"></i>Consigne</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="mail.html">
                                 <i class="zmdi zmdi-email"></i>Gestion Mail</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="user.html">
                                 <i class="fas fa-user"></i>Utilisateurs</a>
                         </li>
                     </ul>
@@ -121,15 +121,15 @@
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="consigne.html">
                                 <i class="fas fa-bar-chart-o"></i>Consigne</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="mail.html">
                                 <i class="zmdi zmdi-email"></i>Gestion Mail</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="user.html">
                                 <i class="fas fa-user"></i>Utilisateurs</a>
                         </li>
                     </ul>
@@ -165,7 +165,8 @@
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="account-dropdown__footer">
-                                                <a href="#"><i class="zmdi zmdi-power"></i>Logout</a>
+                                                <a href="account.html"><i class="zmdi zmdi-account-circle"></i>Mon compte</a>
+                                                <a href="login.html"><i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -181,8 +182,18 @@
             <div class="main-content">
                 <div class="section__content section__content--p30">
                     <div class="container-fluid">
+                        
                         <!-- Content page -->
                         <div class="row">
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                    <button class="au-btn au-btn-icon au-btn--blue" data-toggle="modal" data-target="#ajoutModal" >
+                                        <i class="zmdi zmdi-plus"></i>Ajouter une salle</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
                             <div class="col-lg-7">
                                 <div class="table-responsive table--no-card m-b-30">
                                     <table class="table table-borderless table-striped table-earning">
@@ -200,10 +211,10 @@
                                                 <td>internat haute</td>
                                                 <td> 
                                                     <div class="table-data-feature">
-                                                        <button class="item" data-toggle="modal" data-placement="top" title="" data-original-title="Edit" data-target="#editModal">
+                                                        <button class="item" data-toggle="modal" data-placement="top" title="Edit" data-original-title="Edit" data-target="#ajoutModal">
                                                             <i class="zmdi zmdi-edit"></i>
                                                         </button>
-                                                        <button class="item" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete">
+                                                        <button class="item" data-toggle="modal" data-placement="top" title="Delete" data-original-title="Delete" data-target="#delModal">
                                                             <i class="zmdi zmdi-delete"></i>
                                                         </button>
                                                     </div>
@@ -244,6 +255,74 @@
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="ajoutModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" data-backdrop="static" style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <form action="" method="post">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="staticModalLabel">Ajouter une salle</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input id="name" name="name" placeholder="Nom de la salle" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <select name="select" id="select" name="consigneBas"class="form-control">
+                                                <option value="0">Consigne basse température</option>
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <select name="select" id="select" name="consigneBas"class="form-control">
+                                                <option value="0">Consigne haute température</option>
+                                                <option value="1">Option #1</option>
+                                                <option value="2">Option #2</option>
+                                                <option value="3">Option #3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary">Confirm</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" data-backdrop="static" style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticModalLabel">Static Modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Voulez-vous vraiment supprimer cette salle?
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <!-- END MAIN CONTENT-->
             <!-- END PAGE CONTAINER-->
         </div>

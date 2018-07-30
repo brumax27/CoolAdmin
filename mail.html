@@ -116,20 +116,20 @@
                     </div>
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
-                        <li class="active has-sub">
+                        <li class="has-sub">
                             <a class="js-arrow" href="home.html">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="consigne.html">
                                 <i class="fas fa-bar-chart-o"></i>Consigne</a>
                         </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                        <li class="active has-sub">
+                            <a class="js-arrow" href="mail.html">
                                 <i class="zmdi zmdi-email"></i>Gestion Mail</a>
                         </li>
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="user.html">
                                 <i class="fas fa-user"></i>Utilisateurs</a>
                         </li>
                     </ul>
@@ -147,7 +147,8 @@
                         <div class="header-wrap">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="home.html">Audit thermal</a></li>
+                                    <li class="breadcrumb-item"><a href="home.html">Audit Thermal</a></li>
+                                    <li class="breadcrumb-item" aria-current="page">Paramètrage Mail</li>
                                 </ol>
                             </nav>
                             <div class="header-button col-md-2 ml-auto">
@@ -162,7 +163,8 @@
                                         </div>
                                         <div class="account-dropdown js-dropdown">
                                             <div class="account-dropdown__footer">
-                                                <a href="#"><i class="zmdi zmdi-power"></i>Logout</a>
+                                                <a href="account.html"><i class="zmdi zmdi-account-circle"></i>Mon compte</a>
+                                                <a href="login.html"><i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -180,7 +182,79 @@
                     <div class="container-fluid">
                         <!-- Content page -->
                         <div class="row">
-                            
+                            <div class="col-md-12">
+                                <div class="overview-wrap">
+                                    <h2 class="title-1">overview</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <strong>Paramètrage Mail</strong>
+                                    </div>
+                                    <div class="card-body card-block">
+                                        <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                            <div class="col-12 col-md-9">
+                                                <input id="email-input" name="email-input" placeholder="Enter Email" class="form-control" type="email">
+                                                <small class="help-block form-text">Please enter email of application</small>
+                                            </div>
+                                            <div class="col-12 col-md-9">
+                                                <input id="password-input" name="password-input" placeholder="Password" class="form-control" type="password">
+                                                <small class="help-block form-text">Please enter a password of mail</small>
+                                            </div>
+                                            <div class="col-12 col-md-9">
+                                                <input id="text-input" name="text-input" placeholder="Port" class="form-control" type="text">
+                                                <small class="form-text text-muted">Please enter a port of host mail server</small>
+                                            </div>
+                                            <div class="col-12 col-md-9">
+                                                <input id="text-input" name="text-input" placeholder="Address (ex: smtp.google.com)" class="form-control" type="text">
+                                                <small class="form-text text-muted">Please enter address SMTP of mail server</small>
+                                            </div>
+                                            <button type="button" class="btn btn-primary">Confirm</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col col-md-9">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <strong>Utilisateur à avertir</strong>
+                                        </div>
+                                        <div class="card-body card-block">
+                                            <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        User #1
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        User #2
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        User #3
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        User #4
+                                                    </label>
+                                                </div>
+                                                <button type="button" class="btn btn-primary">Confirm</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
