@@ -66,6 +66,10 @@
                                 <i class="fas fa-bar-chart-o"></i>Consigne</a>
                         </li>
                         <li class="has-sub">
+                            <a class="js-arrow" href="sonde.html">
+                                <i class="fas fa-thermometer-half"></i>Sondes</a>
+                        </li>
+                        <li class="has-sub">
                             <a class="js-arrow" href="mail.html">
                                 <i class="zmdi zmdi-email"></i>Gestion Mail</a>
                         </li>
@@ -123,6 +127,10 @@
                         <li class="active has-sub">
                             <a class="js-arrow" href="consigne.html">
                                 <i class="fas fa-bar-chart-o"></i>Consigne</a>
+                        </li>
+                        <li class="has-sub">
+                            <a class="js-arrow" href="sonde.html">
+                                <i class="fas fa-thermometer-half"></i>Sondes</a>
                         </li>
                         <li class="has-sub">
                             <a class="js-arrow" href="mail.html">
@@ -197,7 +205,6 @@
                                                 <tr>
                                                     <th>Nom</th>
                                                     <th>Température</th>
-                                                    <th>Elements</th>
                                                     <th>Début</th>
                                                     <th>Fin</th>
                                                     <th>Active</th>
@@ -208,11 +215,6 @@
                                                 <tr>
                                                     <td>Internat</td>
                                                     <td>19</td>
-                                                    <td>
-                                                        <ul>
-                                                            <li>gk,nsfdlghf</li>
-                                                        </ul>
-                                                    </td>
                                                     <td>11/10/2017 6h30</td>
                                                     <td>11/05/2018 19h38</td>
                                                     <td id="true">
@@ -234,10 +236,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- DATE PICKER-->
-                            <!--<div id="datePicker" class="col-lg-2 datepicker-here" data-language='fr' data-range="true"
-                            data-multiple-dates-separator=" - " data-timepicker="true"></div>-->
-                            <!-- END DATE PICKER-->
                         </div>
                     </div>
                 </div>
@@ -296,26 +294,26 @@
             </div>
 
             <div class="modal fade" id="delModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" data-backdrop="static" style="display: none;" aria-hidden="true">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticModalLabel">Static Modal</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>
-                                Voulez-vous vraiment supprimer cette Consigne?
-                            </p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary">Confirm</button>
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticModalLabel">Static Modal</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    Voulez-vous vraiment supprimer cette Consigne?
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary">Confirm</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
         
     </div>
